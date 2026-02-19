@@ -3,13 +3,8 @@ import About from "@/components/About";
 import Slider from "@/components/Slider";
 import Article from "@/components/Article";
 import Testimonials from "@/components/Testimonials";
-import VideoSection from "@/components/VideoSection";
+import BlogPreview from "@/components/BlogPreview";
 import ContactFAQ from "@/components/ContactFAQ";
-
-const instagramUrls = [
-  "https://www.instagram.com/reel/DClVhpONFGd/",
-  "https://www.instagram.com/reel/DCOq8wRtgpd/",
-];
 
 export default function HomePage() {
   return (
@@ -19,7 +14,7 @@ export default function HomePage() {
       <Slider />
       <Article />
       <Testimonials />
-      <VideoSection urls={instagramUrls} />
+      <BlogPreview />
       <ContactFAQ />
     </>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -15,7 +15,6 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
   const lastScrollY = useRef(0);
-  const ticking = useRef(false);
 
   const isPriceList = pathname === "/price-list";
 
@@ -27,24 +26,28 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  // Hide on scroll
+  // Smart scroll: hide on down, show on any up
+  const handleScroll = useCallback(() => {
+    const currentY = window.scrollY;
+
+    if (currentY < 190) {
+      // Within header zone — always show
+      setHidden(false);
+    } else if (currentY > lastScrollY.current + 3) {
+      // Scrolling down past header — hide
+      setHidden(true);
+    } else if (currentY < lastScrollY.current - 3) {
+      // Any scroll up — show
+      setHidden(false);
+    }
+
+    lastScrollY.current = currentY;
+  }, []);
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (!ticking.current) {
-        window.requestAnimationFrame(() => {
-          const currentScrollY = window.scrollY;
-          setHidden(
-            currentScrollY > lastScrollY.current && currentScrollY > 100,
-          );
-          lastScrollY.current = currentScrollY;
-          ticking.current = false;
-        });
-        ticking.current = true;
-      }
-    };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   // Lock scroll when menu open
   useEffect(() => {
@@ -55,15 +58,6 @@ const Header: React.FC = () => {
   }, [menuOpen]);
 
   if (isPriceList) return null;
-
-  const scrollToAbout = (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (pathname !== "/") {
-      window.location.href = "/#about";
-    } else {
-      document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <>
@@ -89,13 +83,9 @@ const Header: React.FC = () => {
               <Link href="/" className={styles.navLink}>
                 {t("navHome")}
               </Link>
-              <a
-                href="#about"
-                className={styles.navLink}
-                onClick={scrollToAbout}
-              >
-                {t("navAbout")}
-              </a>
+              <Link href="/blog" className={styles.navLink}>
+                {t("navBlog", "Blog")}
+              </Link>
               <Link href="/gallery" className={styles.navLink}>
                 {t("navGallery")}
               </Link>
@@ -117,6 +107,10 @@ const Header: React.FC = () => {
           )}
         </header>
       </div>
+
+      {/* Spacer to prevent content jump under fixed header */}
+      <div className={styles.headerSpacer} />
+
       {/* Mobile side menu */}
       {menuOpen && (
         <div className={styles.overlay} onClick={() => setMenuOpen(false)}>
@@ -134,16 +128,13 @@ const Header: React.FC = () => {
             >
               {t("navHome")}
             </Link>
-            <a
-              href="#about"
+            <Link
+              href="/blog"
               className={styles.sideLink}
-              onClick={(e) => {
-                scrollToAbout(e);
-                setMenuOpen(false);
-              }}
+              onClick={() => setMenuOpen(false)}
             >
-              {t("navAbout")}
-            </a>
+              {t("navBlog", "Blog")}
+            </Link>
             <Link
               href="/gallery"
               className={styles.sideLink}

@@ -1,0 +1,120 @@
+{
+  "greeting": "Welcome to Balloon Party!",
+  "partyPlace": "Your place for balloon decorations and party services in Trenčín.",
+  "heroCta": "Order decoration",
+  "heroCtaGallery": "View gallery",
+
+  "navHome": "Home",
+  "navBlog": "Blog",
+  "navGallery": "Gallery",
+  "navContact": "Contact",
+
+  "aboutUs": "About Us",
+  "aboutUsIntroduction": "Welcome to Balloon Party! We are professionals in creating decorations and photo walls for your special moments in Trenčín and the entire Trenčín region. Our goal is to bring a unique atmosphere and colorful beauty to your festive day, leaving memories full of joy and happiness.",
+  "aboutUsGoal": "We love bringing bright emotions and making celebrations unforgettable. Whether you're planning a wedding, birthday party, corporate event, or any other special occasion, we ensure it will be extraordinary.",
+  "aboutUsSpecialEvents": "We also offer the option to create a custom design tailored to your specific ideas. Together with you, we turn your ideas into reality and ensure the decoration perfectly matches your style and event character.",
+  "aboutUsProposition": "We also offer helium-filled balloons at €5 per piece, which can be customized with a single digit to your liking! Ideal for all types of celebrations and special occasions.",
+  "aboutUsThanks": "Thank you for trusting us with your most beautiful moments!",
+
+  "ourProducts": "Our Products",
+
+  "ourArticlesTitle": "Recent celebrations and events we decorated",
+  "view_price_list": "View price list",
+
+  "christmas_celebration_title": "Christmas Celebration",
+  "christmas_celebration_description": "Our Christmas celebration in Trenčín was held in a warm and family atmosphere. Christmas balloon decorations perfectly fit the festive atmosphere and helped create an unforgettable Christmas celebration.",
+  "dia_de_los_muertos_celebration_title": "Día de los Muertos Celebration",
+  "dia_de_los_muertos_celebration_description": "🎃 Balloon Party for Epiline: Halloween in Día de los Muertos style! 🎃 We were delighted to participate in decorating the Epiline salon for Halloween. 🕸️✨ We prepared: 💀 Hand-painted glass inspired by the traditional Mexican holiday Día de los Muertos – full of vibrant colors and unique motifs. 🎃 A pumpkin decoration adorned with natural flowers and subtle lighting creating the perfect atmosphere.",
+  "halloween_party_celebration_title": "Halloween Party Celebration",
+  "halloween_party_celebration_description": "We created a spooky yet fun atmosphere at a Halloween party in Trenčín, where guests enjoyed themed decorations and original balloon designs. Our work left an unforgettable impression on all attendees.",
+
+  "aboutPage": {
+    "title": "Welcome to the Balloon Party!",
+    "paragraph1": "Welcome to Balloon Party! We are professionals in creating decorations and photo walls for your special moments in Trenčín and the entire Trenčín region.",
+    "paragraph2": "We love to bring bright emotions and make celebrations unforgettable. Whether you're planning a wedding, birthday party, corporate event, or any other special occasion, we ensure it will be extraordinary.",
+    "paragraph3": "We also offer the option to create a custom design tailored to your specific ideas. Together with you, we turn your ideas into reality.",
+    "priceListLink": "View Our Price List"
+  },
+
+  "articleReadMore": "Read more",
+  "articleReadLess": "Read less",
+  "articleFindOnMap": "Find on map",
+
+  "sliderBirthday": "Birthdays",
+  "sliderDecorations": "Decorations",
+  "sliderChristening": "Christening",
+  "sliderFloral": "Floral",
+  "sliderHolidays": "Holidays",
+  "sliderGift": "Gift",
+
+  "gallery": {
+    "title": "Gallery of Our Balloon Decorations",
+    "aboutCompanyTitle": "About Our Company",
+    "aboutCompanyText1": "We are dedicated to bringing joy and elegance to every celebration. With our creative balloon decorations, we want to make your events unforgettable.",
+    "aboutCompanyText2": "Our goal is to expand our services and keep up with the latest trends to offer you unique and unforgettable experiences.",
+    "aboutCompanyText3": "For more information, follow our social media.",
+    "viewPriceList": "View Our Price List",
+    "lightboxAlt": "View fullscreen",
+    "imageAltPrefix": "Decorative balloon decoration called "
+  },
+
+  "footerDesignBy": "Brand design:",
+
+  "contact": {
+    "title": "Contact Us",
+    "description": "We provide professional balloon decoration services in Trenčín and the entire Trenčín region. Don't hesitate to contact us for any questions.",
+    "phone": "Call us",
+    "instagramProfile": "Visit our Instagram profile",
+    "businessName": "Balón Party00"
+  },
+
+  "contact.phone": "Phone",
+  "contact.hours": "Working hours",
+  "contact.hoursValue": "Mon–Sat: 9:00 – 20:00",
+  "contact.location": "Location",
+  "contact.writeUs": "Write to us",
+  "contact.scanQR": "Scan for Instagram",
+
+  "faqTitle": "Frequently Asked Questions",
+  "faqItems": [
+    {
+      "question": "What types of balloon decorations do you offer?",
+      "answer": "We offer various balloon decorations including arches, centerpieces, balloon bouquets, and custom designs for all occasions."
+    },
+    {
+      "question": "How can I order a balloon decoration service?",
+      "answer": "You can place an order on our website or contact us directly by phone or email."
+    },
+    {
+      "question": "What are your balloon decoration prices?",
+      "answer": "Prices vary depending on the type of decoration and event size. Contact us for a personalized quote."
+    },
+    {
+      "question": "Do you offer custom balloon decoration designs?",
+      "answer": "Yes, we offer fully customizable balloon decoration designs tailored to your event theme."
+    },
+    {
+      "question": "How far in advance should I order balloon decorations?",
+      "answer": "We recommend ordering at least 2-3 weeks in advance to ensure availability, especially for larger events."
+    },
+    {
+      "question": "Can you deliver balloons to the event venue?",
+      "answer": "Yes, we offer balloon delivery to the event venue for an additional fee."
+    },
+    {
+      "question": "Do you provide helium balloons?",
+      "answer": "Yes, we provide helium balloons for your events."
+    },
+    {
+      "question": "What happens if I need to cancel or reschedule my order?",
+      "answer": "Please contact us at least 48 hours before the event to cancel or reschedule. Terms and conditions apply."
+    }
+  ],
+  "watchOurWork": "Watch Our Work",
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "testimonial1": "Great service and amazing balloons! The team organized everything perfectly and the decorations exceeded my expectations. I highly recommend to anyone looking for quality decorations for any occasion!",
+    "testimonial2": "Happy birthday Alina! We're so happy we could order balloons for your birthday. Everyone was thrilled with the colors and shapes that perfectly matched the overall atmosphere. It was a beautiful celebration, thanks in large part to these wonderful decorations. Highly recommended!",
+    "testimonial3": "Thanks to decorations from Balloon Party, a large number of people who didn't know about us visited us. Thank you!"
+  }
+}

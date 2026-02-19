@@ -7,6 +7,7 @@ import React, {
   useEffect,
   useCallback,
 } from "react";
+import { useRouter } from "next/navigation";
 
 interface LanguageContextType {
   language: string;
@@ -20,13 +21,12 @@ const LanguageContext = createContext<LanguageContextType>({
   t: (key: string) => key,
 });
 
-// Import translations
 import sk from "@/i18n/sk.json";
 import ua from "@/i18n/ua.json";
+import en from "@/i18n/en.json";
 
-const translations: Record<string, Record<string, unknown>> = { sk, ua };
+const translations: Record<string, Record<string, unknown>> = { sk, ua, en };
 
-// Get nested value from object by dot-separated key
 function getNestedValue(obj: Record<string, unknown>, path: string): string {
   const keys = path.split(".");
   let current: unknown = obj;
@@ -49,6 +49,7 @@ function getNestedValue(obj: Record<string, unknown>, path: string): string {
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
+  const router = useRouter();
   const [language, setLanguageState] = useState(() => {
     if (typeof window !== "undefined") {
       return localStorage.getItem("baloon-party-language") || "sk";
@@ -60,11 +61,16 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
     document.documentElement.lang = language === "ua" ? "uk" : language;
   }, [language]);
 
-  const setLanguage = useCallback((lang: string) => {
-    setLanguageState(lang);
-    localStorage.setItem("baloon-party-language", lang);
-    document.documentElement.lang = lang === "ua" ? "uk" : lang;
-  }, []);
+  const setLanguage = useCallback(
+    (lang: string) => {
+      setLanguageState(lang);
+      localStorage.setItem("baloon-party-language", lang);
+      document.cookie = `lang=${lang}; path=/; max-age=31536000`;
+      document.documentElement.lang = lang === "ua" ? "uk" : lang;
+      router.refresh();
+    },
+    [router],
+  );
 
   const t = useCallback(
     (key: string, fallback?: string): string => {

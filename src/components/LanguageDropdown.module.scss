@@ -1,45 +1,60 @@
 .dropdown {
   position: relative;
+  z-index: 100;
 }
 
 .toggle {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  background: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-pill);
   cursor: pointer;
-  transition: border-color 0.2s ease;
+  background: transparent;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.25s var(--ease-out);
+  font-family: inherit;
 }
 
 .toggle:hover {
-  border-color: #999;
+  border-color: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .flag {
   border-radius: 2px;
+  object-fit: cover;
 }
 
 .code {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #333;
-  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: 0.03em;
 }
 
 .menu {
   position: absolute;
-  top: calc(100% + 4px);
+  top: calc(100% + 6px);
   right: 0;
   background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   overflow: hidden;
-  z-index: 100;
-  min-width: 150px;
+  min-width: 130px;
+  animation: dropdownIn 0.2s var(--ease-out);
+}
+
+@keyframes dropdownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .option {
@@ -47,20 +62,26 @@
   align-items: center;
   gap: 0.5rem;
   width: 100%;
-  padding: 0.6rem 1rem;
-  border: none;
-  background: #fff;
+  padding: 0.6rem 0.9rem;
   cursor: pointer;
-  font-size: 0.9rem;
-  color: #333;
-  transition: background 0.2s ease;
+  background: transparent;
+  border: none;
+  font-size: 0.85rem;
+  font-family: inherit;
+  color: var(--color-text);
+  transition: all 0.2s ease;
 }
 
 .option:hover {
-  background: #f5f5f5;
+  background: rgba(0, 0, 0, 0.04);
 }
 
-.active {
-  background: #f0f0f0;
+.option.active {
+  background: var(--color-primary-glow);
+  color: var(--color-primary);
   font-weight: 600;
+}
+
+.option span {
+  font-weight: 500;
 }

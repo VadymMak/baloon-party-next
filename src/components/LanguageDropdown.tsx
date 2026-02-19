@@ -1,12 +1,11 @@
-"use client";
-
 import React, { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import styles from "./LanguageDropdown.module.scss";
 
 const languages = [
-  { code: "sk", label: "Slovenský", flag: "/icons/sk.svg" },
-  { code: "ua", label: "Українська", flag: "/icons/ua.svg" },
+  { code: "sk", label: "SK", flag: "/icons/sk.svg" },
+  { code: "ua", label: "UA", flag: "/icons/ua.svg" },
+  { code: "en", label: "EN", flag: "/icons/en.svg" },
 ];
 
 const LanguageDropdown: React.FC = () => {
@@ -36,7 +35,7 @@ const LanguageDropdown: React.FC = () => {
           height={15}
           className={styles.flag}
         />
-        <span className={styles.code}>{current.code}</span>
+        <span className={styles.code}>{current.code.toUpperCase()}</span>
       </button>
 
       {open && (
