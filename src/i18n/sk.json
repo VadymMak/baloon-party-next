@@ -1,0 +1,120 @@
+{
+  "greeting": "Vitajte na Balónovej Párty!",
+  "partyPlace": "Vaše miesto pre balónové dekorácie a party služby v Trenčíne.",
+  "heroCta": "Objednať dekoráciu",
+  "heroCtaGallery": "Pozrieť galériu",
+
+  "navHome": "Domov",
+  "navAbout": "O nás",
+  "navGallery": "Galéria",
+  "navContact": "Kontakty",
+
+  "aboutUs": "O nás",
+  "aboutUsIntroduction": " Vitajte na stránke Baloon Party00! Sme profesionáli v tvorbe dekorácií a fotostien pre vaše výnimočné chvíle v Trenčíne a celom Trenčianskom kraji. Naším cieľom je priniesť do vášho sviatočného dňa jedinečnú atmosféru a farebnú krásu, ktorá zanechá spomienky plné radosti a šťastia.",
+  "aboutUsGoal": "Milujeme prinášať svetlé emócie a robiť oslavy nezabudnuteľnými. Či už plánujete svadbu, narodeninovú oslavu, firemný večierok alebo inú špeciálnu udalosť, postaráme sa o to, aby bola výnimočná.",
+  "aboutUsSpecialEvents": "Ponúkame tiež možnosť vytvoriť individuálny dizajn presne podľa vašich predstáv. Spolu s vami premeníme vaše nápady na skutočnosť a zabezpečíme, aby výzdoba dokonale ladila s vaším štýlom a charakterom udalosti.",
+  "aboutUsProposition": "Okrem toho ponúkame helium naplnené balóniky za cenu 5 EUR za kus, ktoré je možné prispôsobiť o jednu číslicu podľa vašich predstáv! Ideálne pre všetky druhy osláv a špeciálnych príležitostí.",
+  "aboutUsThanks": "Ďakujeme, že nám dôverujete s vašimi najkrajšími momentmi!",
+
+  "ourProducts": "Naše Produkty",
+
+  "ourArticlesTitle": "Nedávne oslavy a podujatia, ktoré sme dekorovali",
+  "view_price_list": "Zobraziť cenník",
+
+  "christmas_celebration_title": "Vianočná sviatočná oslava",
+  "christmas_celebration_description": "Naša vianočná oslava v Trenčíne sa niesla v duchu teplého a rodinného prostredia. Vianočné balónové dekorácie dokonale zapadli do sviatočnej atmosféry a pomohli vytvoriť nezabudnuteľnú vianočnú oslavu. V Trenčíne a jeho okolí sa tešíme, že môžeme vytvárať krásne spomienky na výnimočné chvíle.",
+  "dia_de_los_muertos_celebration_title": "Día de los Muertos oslava",
+  "dia_de_los_muertos_celebration_description": "🎃 Baloon Party pre Epiline: Halloween v štýle Día de los Muertos! 🎃 S radosťou sme sa podieľali na výzdobe salónu Epiline pri príležitosti Halloweenu. 🕸️✨ Pripravili sme:💀 Ručnú maľbu na sklo inšpirovanú tradičným mexickým sviatkom Día de los Muertos – plnú žiarivých farieb a jedinečných motívov.🎃 Dekoráciu z tekvice ozdobenú prírodnými kvetmi a doplnenú jemným osvetlením, ktoré vytvára dokonalú atmosféru. Ďakujeme salónu Epiline za dôveru a príležitosť priniesť trochu kreativity do tohto čarovného obdobia. ✨ Ak plánujete podobnú výzdobu pre svoju firmu alebo domov, neváhajte nás kontaktovať!",
+  "halloween_party_celebration_title": "Halloweenska párty oslava",
+  "halloween_party_celebration_description": "Vytvorili sme strašidelnú, no zábavnú atmosféru na Halloweenskej párty v Trenčíne, kde sa hostia tešili na tematickú výzdobu a originálne balónové dekorácie. Naša práca zanechala nezabudnuteľný dojem na všetkých účastníkoch.",
+
+  "aboutPage": {
+    "title": "Welcome to the Balloon Party!",
+    "paragraph1": "Welcome to Balloon Party! We are professionals in creating decorations and photo walls for your special moments in Trenčín and the entire Trenčín region. Our goal is to bring a unique atmosphere and colorful beauty to your festive day, leaving memories full of joy and happiness.",
+    "paragraph2": "We love to bring bright emotions and make celebrations unforgettable. Whether you’re planning a wedding, birthday party, corporate event, or any other special occasion, we ensure it will be extraordinary.",
+    "paragraph3": "We also offer the option to create a custom design tailored to your specific ideas. Together with you, we turn your ideas into reality and make sure the decoration perfectly matches your style and the event’s character.",
+    "priceListLink": "View Our Price List"
+  },
+
+  "articleReadMore": "Čítať viac",
+  "articleReadLess": "Skryť",
+  "articleFindOnMap": "Nájsť na mape",
+
+  "sliderBirthday": "Narodeniny",
+  "sliderDecorations": "Dekorácie",
+  "sliderChristening": "Krst dieťaťa",
+  "sliderFloral": "Kvetinové",
+  "sliderHolidays": "Prázdniny",
+  "sliderGift": "Darček",
+
+  "gallery": {
+    "title": "Galéria našich balónových dekorácií",
+    "aboutCompanyTitle": "O našej spoločnosti",
+    "aboutCompanyText1": "Sme odhodlaní prinášať radosť a eleganciu do každej oslavy. Našimi kreatívnymi balónovými dekoráciami chceme vaše udalosti urobiť nezabudnuteľnými.",
+    "aboutCompanyText2": "Naším cieľom je rozšíriť naše služby a držať krok s najnovšími trendmi, aby sme vám mohli ponúknuť jedinečné a nezabudnuteľné zážitky. Pridajte sa k nám, keď oživujeme vaše predstavy, jednu oslavu za druhou!",
+    "aboutCompanyText3": "Pre viac informácií sledujte naše sociálne siete.",
+    "viewPriceList": "Zobraziť náš cenník",
+    "lightboxAlt": "Zobraziť na celú obrazovku",
+    "imageAltPrefix": "Dekoratívna balónová výzdoba s názvom "
+  },
+
+  "footerDesignBy": "Dizajn značky:",
+
+  "contact": {
+    "title": "Kontaktujte nás",
+    "description": "Naše profesionálne služby balónových dekorácií poskytujeme v Trenčíne a celom trenčianskom regióne. Nezdráhajte sa nás kontaktovať pre akékoľvek otázky alebo ďalšie informácie.",
+    "phone": "Zavolajte nám",
+    "instagramProfile": "Navštívte náš profil na Instagrame",
+    "businessName": "Balón Party00"
+  },
+
+  "contact.phone": "Telefón",
+  "contact.hours": "Pracovné hodiny",
+  "contact.hoursValue": "Po–So: 9:00 – 20:00",
+  "contact.location": "Lokalita",
+  "contact.writeUs": "Napíšte nám",
+  "contact.scanQR": "Naskenujte pre Instagram",
+
+  "faqTitle": "Často kladené otázky",
+  "faqItems": [
+    {
+      "question": "Aké typy dekorácií z balónov ponúkate?",
+      "answer": "Ponúkame rôzne dekorácie z balónov, vrátane oblúkov, centropiérov, balónových kytíc a vlastných návrhov pre všetky príležitosti."
+    },
+    {
+      "question": "Ako môžem objednať službu dekorácie balónmi?",
+      "answer": "Objednávku môžete zadať na našej stránke 'Objednávky' alebo nás kontaktujte priamo telefonicky alebo e-mailom."
+    },
+    {
+      "question": "Aké sú ceny vašich dekorácií z balónov?",
+      "answer": "Ceny sa líšia podľa typu dekorácie a veľkosti podujatia. Kontaktujte nás pre individuálnu ponuku."
+    },
+    {
+      "question": "Ponúkate vlastné návrhy dekorácií z balónov?",
+      "answer": "Áno, ponúkame plne prispôsobiteľné návrhy dekorácií z balónov podľa témy vášho podujatia."
+    },
+    {
+      "question": "Koľko času vopred by som mal objednať dekorácie z balónov?",
+      "answer": "Odporúčame objednať dekorácie minimálne 2-3 týždne vopred, aby sme zabezpečili dostupnosť, najmä pri väčších podujatiach."
+    },
+    {
+      "question": "Môžete doručiť balóniky na miesto konania podujatia?",
+      "answer": "Áno, ponúkame doručenie balónov na miesto konania podujatia za príplatok."
+    },
+    {
+      "question": "Poskytujete heliové balóniky?",
+      "answer": "Áno, poskytujeme heliové balóniky na vaše podujatia."
+    },
+    {
+      "question": "Čo sa stane, ak musím zrušiť alebo preložiť svoju objednávku?",
+      "answer": "Prosím, kontaktujte nás aspoň 48 hodín pred podujatím, ak chcete zrušiť alebo preložiť svoju objednávku. Platí podmienky."
+    }
+  ],
+  "watchOurWork": "Sledujte našu prácu",
+  "testimonials": {
+    "title": "Čo hovoria naši zákazníci",
+    "testimonial1": "Skvelá služba a úžasné balóniky! Tím všetko zorganizoval perfektne a dekorácie prekonali moje očakávania. Určite odporúčam každému, kto hľadá kvalitné dekorácie na akúkoľvek príležitosť!",
+    "testimonial2": "Šťastné a veselé Alina! Sme šťastní, že sme si mohli objednať balóniky na tvoje narodeniny. Všetci sme boli nadšení z farieb a tvarov balónov, ktoré dokonale zapadli do celkovej atmosféry. Bola to krásna oslava a veľa vďaka aj týmto nádherným dekoráciám. Veľmi odporúčam!",
+    "testimonial3": "Vďaka dekorácii od Baloon Party nás videlo a navštívilo veľké množstvo ľudí, ktorí o nás nevedeli. Ďakujeme!"
+  }
+}
