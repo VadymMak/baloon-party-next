@@ -4,6 +4,9 @@ import LayoutClient from "@/components/LayoutClient";
 import "@/styles/globals.scss";
 
 export const metadata: Metadata = {
+  verification: {
+    google: "5K3URXoE7IN4lDerGqc9jPRemil4BstRABQmQsylI1U",
+  },
   title: "Balón Party — Balónové dekorácie a party služby v Trenčíne",
   description:
     "Sme profesionálna dekoratérska služba v Trenčíne, ktorá vytvára nezabudnuteľné fotosteny a dekorácie pre svadby, narodeninové oslavy, firemné akcie a špeciálne udalosti.",
