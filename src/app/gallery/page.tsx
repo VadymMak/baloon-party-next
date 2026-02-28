@@ -89,10 +89,10 @@ export default function GalleryPage() {
           <Image
             src={galleryImages[activeIndex].url}
             alt={`Gallery ${activeIndex + 1}`}
-            width={1200}
-            height={900}
-            className={styles.fullImage}
-            onClick={(e) => e.stopPropagation()}
+            width={380}
+            height={380}
+            sizes="(max-width: 768px) 50vw, 25vw"
+            loading="lazy"
           />
           <button
             className={`${styles.navBtn} ${styles.navNext}`}

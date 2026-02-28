@@ -50,16 +50,27 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const router = useRouter();
-  const [language, setLanguageState] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("baloon-party-language") || "sk";
-    }
-    return "sk";
-  });
+
+  // Always start with "sk" — matches server render, prevents hydration mismatch
+  const [language, setLanguageState] = useState("sk");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    document.documentElement.lang = language === "ua" ? "uk" : language;
-  }, [language]);
+    const saved = localStorage.getItem("baloon-party-language");
+    if (saved && translations[saved]) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setLanguageState(saved);
+      document.documentElement.lang = saved === "ua" ? "uk" : saved;
+    }
+    setMounted(true);
+  }, []);
+
+  // Update html lang attribute when language changes (after mount)
+  useEffect(() => {
+    if (mounted) {
+      document.documentElement.lang = language === "ua" ? "uk" : language;
+    }
+  }, [language, mounted]);
 
   const setLanguage = useCallback(
     (lang: string) => {
